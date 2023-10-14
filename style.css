@@ -21,7 +21,7 @@ body{
 #Navegar{
   display: flex;
   width: 25vw;
-  height: 100vh;
+  height: 110%;
   align-items: center;
   justify-content: center;
   background-color:  #9E5F5F;
@@ -102,10 +102,21 @@ article{
 
   
 }
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: 0.4s;
+}
+
 /* ================ Article : Sobre Mim =================== */
 
   #SobreMim{
-    display: none;
+    display: block;
     background-image: url(images/dr15.jpg);
     background-size: cover;
     background-position: center center;
@@ -169,15 +180,22 @@ article{
 }
 
 img{
-  width: 150px;
-  height: 110px;
-  display: none;
+  width: 100%;
+  height: auto;
+  
 }
 
 .education {
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px 0;
+  transition: 0.4s;
+}
+.education:hover{
+  scale: 101%;
+  transition: 0.4s;
+  
+  box-shadow: 5px 5px 50px 1px rgba(116, 255, 151, 0.212);
 }
 
 .education h2 {
@@ -189,7 +207,7 @@ img{
 }
 /* ================ CONTATO E SOCIAL =================== */
 #Contato{
-  display: block;
+  display: none;
 
   background-image: url(images/dr15.jpg);
   background-size: cover;
@@ -228,20 +246,21 @@ img{
   background-image: url(images/gpt9.jpg);
   background-size: cover;
   background-position: center center;
+
+  overflow-y: scroll;
 }
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
-}
+
 
 .project {
   border: 1px solid #ccc;
   padding: 20px;
   margin: 10px 0;
+  transition: 0.4s;
+}
+.project:hover{
+  scale: 101%;
+  transition: 0.4s;
+  box-shadow: 5px 5px 50px 1px rgba(116, 255, 151, 0.212);
 }
 
 .project h2 {
@@ -250,25 +269,30 @@ img{
 
 .project p {
   font-size: 1.1em;
+  text-align: justify;
+  margin-bottom: 5px;
 }
 
 .project a {
   text-decoration: none;
-  color: #0077b5;
+  color: black;
+  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Medias queries */
+@media (max-width: 767px) {
+  #Navegar{display: none;}
+  main{
+    display: flex;
+    align-items: center;
+  }
+  article{
+    width: 100%;
+    overflow-y: scroll;
+    padding: 20px;
+  }
+  .Texto{
+    margin: 0px;
+    width: 100%;
+    text-indent: 15px;
+  }
+}
