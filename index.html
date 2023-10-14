@@ -16,6 +16,10 @@
 </head>
 
 <body>
+  <nav id="Nav-Mobile" onclick="MostraNavMobile()">
+    
+  </nav>
+    
   <nav id="Navegar">
     <ul>
       <li id="Foto"></li>
@@ -237,8 +241,29 @@
       }
     }
 
+    // function MostraNavMobile(){
+    //   var NavMobile = document.getElementById('Nav-Mobile');
+    //   var numero=0;
+    //   if(numero=0){
+    //     NavMobile.style.height='40%';
+    //     numero=1;
+    //   }else{
+    //     numero=0;
+    //     NavMobile.style.height='89%';
+    //   }
+    // }
 
-
+    function MostraNavMobile() {
+      var NavMobile = document.getElementById('Nav-Mobile');
+      if (NavMobile.style.height === '100px' || NavMobile.style.width === '') {
+        NavMobile.style.height = '2000px';
+      } else if(NavMobile.style.height === '2000px') {
+        NavMobile.style.height = '100px';
+    }
+  }
+    
+    
+    
 
 
   </script>
