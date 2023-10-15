@@ -297,7 +297,7 @@ img{
 
 
   article{
-    width: 100%;
+    width: 90%;
     overflow-y: scroll;
     padding: 20px;
   }
@@ -310,9 +310,41 @@ img{
   }
 
   #Nav-Mobile{
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 100px;
     background-color: rgba(0, 0, 0, 0.171);
   }
+  .Estreito{
+    height: 20px;
+    transition: 0.4s;
+  }
+  .Largo{
+    height: 200px;
+    transition: 0.4s;
+  }
+  .hidden {
+    display: none;
+  }
+
+  .visible {
+    display: block;
+  }
+
+  li{
+    margin-bottom: 5px;
+  }
+  
+  ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+
 }
