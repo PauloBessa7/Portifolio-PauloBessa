@@ -293,13 +293,16 @@ img{
     display: flex;
     align-items: center;
     flex-direction: column;
+    overflow-x: hidden;
   }
 
 
   article{
     width: 90%;
+    height: 98%;
     overflow-y: scroll;
     padding: 20px;
+    
   }
 
 
@@ -307,6 +310,8 @@ img{
     margin: 0px;
     width: 100%;
     text-indent: 15px;
+    font-size: 12px;
+    margin-bottom: 5px;
   }
 
   #Nav-Mobile{
