@@ -20,6 +20,8 @@ body {
 
   background-color: rgba(37, 37, 37, 0.733);
   color: white;
+
+  
 }
 
 /* ================ Navegação =================== */
@@ -370,6 +372,8 @@ footer {}
 
     background-color: rgb(37, 37, 37);
     color: white;
+
+    padding-bottom: 20px;
   }
 
 
